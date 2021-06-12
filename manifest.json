@@ -1,0 +1,14 @@
+{
+ "manifest_version": 2,
+ "name": "ROOT Market",
+ "version": "0.1",
+ "description": "ChromeExtension",
+
+ "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "jquery.js" , "worker.js" ],
+	  "run_at": "document_end"
+    }
+  ]
+}
